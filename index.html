@@ -4,248 +4,77 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhishek Kumar Sharma | Portfolio</title>
-  <style>
-    /* Reset */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: "Poppins", sans-serif;
-    }
-
-    body {
-      background: #f4f7fb;
-      color: #333;
-    }
-
-    /* Navbar */
-    header {
-      background: #1e3c72;
-      color: white;
-      padding: 15px 0;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-    .container {
-      width: 90%;
-      max-width: 1100px;
-      margin: auto;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    header h1 {
-      font-size: 1.5rem;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin-left: 20px;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #ffcc00;
-    }
-
-    /* Hero Section */
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(to right, #1e3c72, #2a5298);
-      color: white;
-    }
-    .hero img {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      border: 4px solid white;
-      margin-bottom: 20px;
-    }
-    .hero h2 {
-      font-size: 2.2rem;
-    }
-    .hero p {
-      margin-top: 10px;
-      font-size: 1.2rem;
-      opacity: 0.9;
-    }
-
-    /* Section Style */
-    section {
-      width: 90%;
-      max-width: 1100px;
-      margin: 50px auto;
-      background: white;
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
-    section h2 {
-      text-align: center;
-      margin-bottom: 20px;
-      color: #1e3c72;
-    }
-
-    /* About */
-    .about p {
-      text-align: center;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
-
-    /* Skills */
-    .skills ul {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      list-style: none;
-    }
-    .skills li {
-      background: #1e3c72;
-      color: white;
-      margin: 10px;
-      padding: 12px 20px;
-      border-radius: 25px;
-      font-weight: 500;
-      transition: transform 0.3s;
-    }
-    .skills li:hover {
-      transform: scale(1.1);
-      background: #ffcc00;
-      color: #333;
-    }
-
-    /* Projects */
-    .projects .card {
-      background: #f9f9f9;
-      margin: 15px 0;
-      padding: 20px;
-      border-radius: 10px;
-      border-left: 5px solid #1e3c72;
-      transition: transform 0.3s;
-    }
-    .projects .card:hover {
-      transform: translateX(10px);
-      border-left-color: #ffcc00;
-    }
-
-    /* Contact */
-    .contact form {
-      display: flex;
-      flex-direction: column;
-    }
-    .contact input, .contact textarea {
-      margin-bottom: 15px;
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-    .contact button {
-      background: #1e3c72;
-      color: white;
-      padding: 12px;
-      border: none;
-      border-radius: 8px;
-      font-size: 1rem;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .contact button:hover {
-      background: #ffcc00;
-      color: #333;
-    }
-
-    /* Footer */
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #1e3c72;
-      color: white;
-      margin-top: 30px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <!-- Navbar -->
+  <!-- Navigation -->
+  
   <header>
-    <div class="container">
-      <h1>Abhishek</h1>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
+    <nav>
+      <h1>Abhishek Kumar Sharma</h1>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <!-- Hero Section -->
-  <div class="hero">
-    <img src="abhi.jpg" alt="Profile Photo">
-    <h2>Hi, I'm Abhishek Kumar Sharma 👋</h2>
-    <p>BCA Student | Future Web & App Developer | Tech Enthusiast 🚀</p>
-  </div>
+  <section class="hero">
+     <div class="project-card">
+  <img src="abhi.jpg" alt="To-Do List App" class="project-img" height="500px" width="500px">
+  <h3>To-Do List App</h3>
+  <p>A simple to-do list app created with HTML, CSS, and JavaScript.</p>
+  <a href="todo.html" target="_blank">View Project</a>
+</div>
+    <h2>Hello, I'm Abhishek 👋</h2>
+    <p>Aspiring Web Developer | BCA Student</p>
+    <a href="#projects" class="btn">View My Work</a>
+  </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
+  <!-- About -->
+  <section id="about">
     <h2>About Me</h2>
     <p>
-      I'm Abhishek, a BCA student passionate about web and app development.  
-      I love coding, solving problems, and creating modern websites & applications.  
-      My dream is to work at top MNCs and keep learning new technologies.
+      I am a BCA student passionate about web development and application development. 
+      I enjoy learning new technologies and building projects that solve real-life problems.
     </p>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
+  <!-- Skills -->
+  <section id="skills">
     <h2>My Skills</h2>
-    <ul>
-      <li>C,C++</li>  
-      <li>HTML5</li>
-      <li>CSS3</li>
-      <li>JavaScript</li>
+    <ul class="skills-list">
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript (Basics)</li>
       <li>Python</li>
-      <li>Django</li>
-      <li>Git & GitHub</li>
+      <li>Django (Learning)</li>
     </ul>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
+  <!-- Projects -->
+  <section id="projects">
     <h2>Projects</h2>
-    <div class="card">
-      <h3>🌐 Personal Portfolio</h3>
-      <p>This stylish portfolio website hosted on GitHub Pages.</p>
-    </div>
-    <div class="card">
-      <h3>🐍 Python Mini Apps</h3>
-      <p>Small programs for learning recursion, loops, and algorithms.</p>
-    </div>
-    <div class="card">
-      <h3>📝 Django Blog (Upcoming)</h3>
-      <p>A blog application with authentication & dashboard.</p>
+    <div class="project-card">
+      <h3>To-Do List App</h3>
+      <p>A simple to-do list app created with HTML, CSS, and JavaScript.</p>
+      <a href="todo.html" target="_blank">View Project</a>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <!-- Contact -->
+  <section id="contact">
     <h2>Contact Me</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
-      <textarea rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+    <p>Email: <a href="mailto:abhishek@example.com">abhishek@example.com</a></p>
+    <p>GitHub: <a href="https://github.com/abhishek860" target="_blank">github.com/abhishek860</a></p>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Abhishek Kumar Sharma | Made with ❤ in HTML & CSS</p>
+    <p>&copy; 2025 Abhishek Kumar Sharma. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
